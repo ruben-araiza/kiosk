@@ -1,0 +1,41 @@
+header {
+  height: 50px;
+  background-color: rgb(112, 112, 137);
+}
+
+footer {
+  height: 50px;
+  background-color: rgb(103, 103, 143);
+}
+
+.mainContainer {
+  border-color: black;
+  display: flex;
+  align-items: stretch;
+  flex: 1;
+}
+
+.TaskDashboard {
+  width: 30%;
+}
+
+.CalendarDashboard {
+  width: 70%;
+}
+
+.Card {
+  background-color: rgb(119, 133, 126);
+  border-radius: 20px;
+  height: 100%;
+  padding: 12px;
+}
+.container {
+  padding: 2px;
+}
+.content {
+  height: 100%;
+}
+
+.contentPlaceholder {
+  background-color: beige;
+}
