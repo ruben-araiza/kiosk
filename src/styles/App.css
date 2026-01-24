@@ -1,41 +1,21 @@
-header {
-  height: 50px;
-  background-color: rgb(112, 112, 137);
+.mainWrapper {
+  background-color: #1f1f1f;
+  display: flex;
+  align-items: stretch;
+  height: 100%;
+  border-radius: 50px;
 }
 
-footer {
-  height: 50px;
-  background-color: rgb(103, 103, 143);
+.sidebar {
+  width: 120px;
+  border-radius: 0 50px 50px 0;
+
+  background-color: #1f1f1f;
 }
 
 .mainContainer {
-  border-color: black;
-  display: flex;
-  align-items: stretch;
   flex: 1;
-}
-
-.TaskDashboard {
-  width: 30%;
-}
-
-.CalendarDashboard {
-  width: 70%;
-}
-
-.Card {
-  background-color: rgb(119, 133, 126);
-  border-radius: 20px;
-  height: 100%;
-  padding: 12px;
-}
-.container {
-  padding: 2px;
-}
-.content {
-  height: 100%;
-}
-
-.contentPlaceholder {
-  background-color: beige;
+  background-color: #ffffff;
+  margin: 30px 30px;
+  border-radius: 45px;
 }

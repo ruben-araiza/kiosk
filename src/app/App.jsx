@@ -8,12 +8,10 @@ import "/src/styles/App.css";
 function App() {
   return (
     <>
-      <Header />
-      <div className="mainContainer">
-        <TaskDashboard />
-        <CalendarDashboard />
+      <div className="mainWrapper">
+        <div className="mainContainer"></div>
+        <div className="sidebar"></div>
       </div>
-      <Footer />
     </>
   );
 }
