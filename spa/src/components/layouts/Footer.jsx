@@ -1,4 +1,4 @@
-import Card from "/src/components/Card.jsx";
+import Card from "@/components/Card.jsx";
 
 function Footer() {
   return (

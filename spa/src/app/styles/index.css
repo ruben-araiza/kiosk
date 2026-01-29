@@ -1,0 +1,123 @@
+/* src/app/styles/index.css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Helps form controls match your theme if you use light/dark tokens */
+  /* color-scheme: dark light; */
+
+  /* Prevent iOS text auto-zoom weirdness in kiosk-like UIs */
+  -webkit-text-size-adjust: 100%;
+
+  /* Use a stable font size baseline */
+  font-size: 16px;
+
+  /* Avoid tap highlight in kiosk UIs (mobile/touch) */
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0;
+
+  /* Base typography */
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    "Apple Color Emoji",
+    "Segoe UI Emoji";
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Theme-driven base colors (from tokens.css) */
+  background: var(--bg);
+  color: var(--text);
+
+  /* Make default text selection readable against dark backgrounds */
+  caret-color: currentColor;
+}
+
+/* 2) Media elements behave predictably */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+/* 3) Form controls inherit font by default */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+/* 4) Links: keep simple, let components style if needed */
+a {
+  color: var(--aColor);
+}
+
+a:hover {
+  text-decoration: currentColor;
+  text-decoration: underline;
+}
+
+/* 5) Lists and headings: remove surprising margins, let layout control spacing */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+figure,
+blockquote {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding-left: 1.25rem;
+}
+
+/* 6) Buttons: avoid default browser styling surprises */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* 7) Focus: accessible, consistent */
+:focus-visible {
+  outline: 2px solid rgba(255, 255, 255, 0.5);
+  outline-offset: 2px;
+}
+
+/* 9) Optional: selection styling (nice for dark kiosks) */
+::selection {
+  background: rgba(90, 90, 90, 0.2);
+}
