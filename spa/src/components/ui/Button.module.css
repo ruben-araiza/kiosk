@@ -1,0 +1,24 @@
+.button {
+  border: var(--border);
+  border-radius: 5px;
+  padding-inline: var(--space-2);
+  cursor: pointer;
+  transition:
+    background-color 150ms ease,
+    transform 150ms ease,
+    box-shadow 150ms ease;
+}
+
+.button:hover,
+.button:focus-visible {
+  background-color: var(--color-accent-muted, rgba(0, 0, 0, 0.1));
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--color-accent);
+}
+
+.button:active {
+  transform: translateY(2px);
+}
